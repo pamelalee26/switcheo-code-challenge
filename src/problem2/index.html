@@ -1,27 +1,29 @@
-<html>
+<!DOCTYPE html>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fancy Form</title>
+<html lang="en">
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+      <title>Currency Converter</title>
+  </head>
 
-  <!-- You may add more stuff here -->
-  <link href="style.css" rel="stylesheet" />
-</head>
+  <body>
+      <h1>Currency Converter</h1>
 
-<body>
+      <div class="centered-container">
+        <div class="currency-box">
+          <select id="fromCurrency"></select>
+          <input type="number" id="amount" value="1">
+        </div>
 
-  <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
-  <form onsubmit="return !1">
-    <h5>Swap</h5>
-    <label for="input-amount">Amount to send</label>
-    <input id="input-amount" />
+        <img class="arrow-image" src="arrow.png" alt="Double-direction arrow">
 
-    <label for="output-amount">Amount to receive</label>
-    <input id="output-amount" />
+        <div class="currency-box">
+          <select id="toCurrency"></select>
+          <input type="number" id="result">
+        </div>
+      </div>
 
-    <button>CONFIRM SWAP</button>
-  </form>
-  <script src="script.js"></script>
-</body>
-
+      <script src="script.js"></script>
+  </body>
 </html>

@@ -1,8 +1,37 @@
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 360px;
+  height: 100vh; /* Use height instead of min-width to center vertically */
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px; /* Add some spacing below the title */
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.currency-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px; /* Add some spacing around the boxes */
+}
+
+.currency-box select,
+.currency-box input {
+  width: 200px; /* Adjust the width as needed */
+  margin-top: 5px; /* Add some spacing between the input and select */
+}
+
+.arrow-image {
+  width: 20px; /* Adjust the width of the arrow image */
+  margin: 0 10px; /* Add some spacing around the arrow image */
 }
